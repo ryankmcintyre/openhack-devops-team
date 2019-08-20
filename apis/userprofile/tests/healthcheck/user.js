@@ -63,7 +63,7 @@ Test('/healthcheck/user', function (t) {
                     t.error(err, 'No error');
                     t.ok(res.statusCode === 200, 'Ok response status');
                     var Validator = require('is-my-json-valid');
-                    var validate = Validator(api.paths['/healthcheck/user1']['get']['responses']['200']['schema']);
+                    var validate = Validator(api.paths['/healthcheck/user']['get']['responses']['200']['schema']);
                     var response = res.body;
                     if (Object.keys(response).length <= 0) {
                         response = res.text;

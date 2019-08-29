@@ -47,7 +47,7 @@ namespace IntegrationTests
                 await response.Content.ReadAsStringAsync());
 
             //Check that 3 pois are returned
-            Assert.Equal(4,
+            Assert.Equal(3,
             pois.Count);
         }
     }
